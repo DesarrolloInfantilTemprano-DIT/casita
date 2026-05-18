@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Registro Madres</title>
+    <title>Registro Madres y Gestante</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -127,11 +127,11 @@
     </header>
 
     <form id="mainForm">
-        <!-- SECCIÓN 1: DATOS DE LA MADRE -->
+        <!-- SECCIÓN 1: DATOS DE LA MADRE y GESTANTE-->
         <section>
-            <h3><i class="fas fa-id-card"></i> Datos del Cuidador del Niñ@</h3>
+            <h3><i class="fas fa-id-card"></i> Datos del Cuidador del Niñ@ y Gestante</h3>
             <div class="field">
-                <label>N° DNI del Cuidador (Madre,padre,u otro):</label>
+                <label>N° DNI del Cuidador o Gestante:</label>
                 <input type="text" name="dni_madre" pattern="\d{8}" maxlength="8" placeholder="Ej. 12345678" required>
             </div>
             <div class="field">
@@ -169,19 +169,20 @@
 
         <!-- SECCIÓN 2: DATOS DE LOS HIJOS (DINÁMICO) -->
         <section>
-            <h3><i class="fas fa-baby"></i> Registro de Hijos menores de 5 años</h3>
+            <h3><i class="fas fa-baby"></i> Registro de Hijos menores de 5 años y Niño por Nacer (1000000)</h3>
             <div id="lista-hijos"></div>
             <button type="button" class="btn-add" onclick="agregarHijo()">
-                <i class="fas fa-plus"></i> Añadir Hijo
+                <i class="fas fa-plus"></i> Añadir Hijo o Niño por nacer
             </button>
         </section>
 
-        <!-- SECCIÓN 3: CUIDADORES -->
+        <!-- SECCIÓN 3: CUIDADORES y/o Gestante-->
         <section>
-            <h3><i class="fas fa-house-user"></i> ¿Quiénes viven con el menor?</h3>
+            <h3><i class="fas fa-house-user"></i> ¿Quiénes viven con el menor o la gestante?</h3>
             <div class="checkbox-grid">
                 <label class="checkbox-item"><input type="checkbox" name="cuidadores[]" value="Madre"> Mamá</label>
                 <label class="checkbox-item"><input type="checkbox" name="cuidadores[]" value="Padre"> Papá</label>
+                <label class="checkbox-item"><input type="checkbox" name="cuidadores[]" value="Abuelos"> Esposo/Pareja</label>
                 <label class="checkbox-item"><input type="checkbox" name="cuidadores[]" value="Abuelos"> Abuelos</label>
                 <label class="checkbox-item"><input type="checkbox" name="cuidadores[]" value="Tios"> Tíos</label>
                 <label class="checkbox-item"><input type="checkbox" name="cuidadores[]" value="Primos"> Primos</label>
